@@ -10,9 +10,9 @@ const assertEqual = function(actual, expected) {
     }
   }
   if (!trueOrFalse) {
-    return console.log("Assertion Failed: " + actual + " !== " + expected);
+    return console.log(`Assertion Failed: ${actual} !== ${expected}`);
   } else {
-    return console.log("Assertion Passed: " + actual + " === " + expected);
+    return console.log(`Assertion Passed: ${actual} === ${expected}`);
   }
 };
 
