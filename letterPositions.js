@@ -24,7 +24,7 @@ const assertEqual = function(actual, expected) {
 const letterPositions = function(string) {
   let letterPosition = {};
   for (let index = 0; index < string.length; index++) {
-    if(string[index] !== " "){
+    if (string[index] !== " ") {
       if (letterPosition[string[index]]) {
         letterPosition[string[index]].push(index);
       } else {
