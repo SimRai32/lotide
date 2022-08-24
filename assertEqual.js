@@ -1,12 +1,18 @@
 // FUNCTION IMPLEMENTATION
 const assertEqual = function(actual, expected) {
   let trueOrFalse = true;
-  if (actual.toString().length !== expected.toString().length) {
-    trueOrFalse = false;
-  }
-  for (let i = 0; i < expected.toString().length; i++) {
-    if (actual.toString()[i] !== expected.toString()[i]) {
+  if (actual === undefined || expected === undefined) {
+    if(actual !== expected) {
       trueOrFalse = false;
+    } 
+  } else {
+      if (actual.toString().length !== expected.toString().length) {
+        trueOrFalse = false;
+      }
+      for (let i = 0; i < expected.toString().length; i++) {
+      if (actual.toString()[i] !== expected.toString()[i]) {
+        trueOrFalse = false;
+      }
     }
   }
   if (!trueOrFalse) {
@@ -20,4 +26,4 @@ const assertEqual = function(actual, expected) {
 assertEqual("Lighthouse Labs", "Bootcamp");
 assertEqual(1, 1);
 assertEqual(11, 12);
-assertEqual("dog", "dog");
+assertEqual(undefined, "dog");
