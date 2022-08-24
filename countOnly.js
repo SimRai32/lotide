@@ -1,14 +1,14 @@
 const assertEqual = function(actual, expected) {
   let trueOrFalse = true;
   if (actual === undefined || expected === undefined) {
-    if(actual !== expected) {
+    if (actual !== expected) {
       trueOrFalse = false;
-    } 
+    }
   } else {
-      if (actual.toString().length !== expected.toString().length) {
-        trueOrFalse = false;
-      }
-      for (let i = 0; i < expected.toString().length; i++) {
+    if (actual.toString().length !== expected.toString().length) {
+      trueOrFalse = false;
+    }
+    for (let i = 0; i < expected.toString().length; i++) {
       if (actual.toString()[i] !== expected.toString()[i]) {
         trueOrFalse = false;
       }
@@ -28,12 +28,12 @@ const countOnly = function(allItems, itemsToCount) {
   for (const key of keys) {
     if (itemsToCount[key]) {
       console.log(itemsToCount[key]);
-      allItems.forEach (item => {
+      allItems.forEach(item => {
         if (key === item) {
           counter ++;
         }
-      })
-      if (counter > 0){
+      });
+      if (counter > 0) {
         itemsCounted[key] = counter;
       } else {
         itemsCounted[key] = undefined;
@@ -41,10 +41,10 @@ const countOnly = function(allItems, itemsToCount) {
       counter = 0;
     } else {
       itemsCounted[key] = undefined;
-    } 
-  } 
-  return itemsCounted;  
-}
+    }
+  }
+  return itemsCounted;
+};
 
 const firstNames = [
   "Karl",
@@ -58,7 +58,7 @@ const firstNames = [
   "Joe"
 ];
 
-const result1 = countOnly (firstNames, {"Jason": true, "Karima":true, "Fang":true, "Agouhanna":false});
+const result1 = countOnly(firstNames, {"Jason": true, "Karima":true, "Fang":true, "Agouhanna":false});
 
 assertEqual(result1["Jason"], 1);
 assertEqual(result1["Karima"], undefined);

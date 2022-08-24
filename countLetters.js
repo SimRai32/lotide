@@ -1,4 +1,3 @@
-// FUNCTION IMPLEMENTATION
 const assertEqual = function(actual, expected) {
   let trueOrFalse = true;
   if (actual === undefined || expected === undefined) {
@@ -22,8 +21,23 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-// TEST CODE
-assertEqual("Lighthouse Labs", "Bootcamp");
-assertEqual(1, 1);
-assertEqual(11, 12);
-assertEqual(undefined, "dog");
+const countLetters = function(string) {
+  let lettersCounted = {};
+  const noSpaceString = string.split(" ").join("");
+  for (const letter of noSpaceString) {
+    if (lettersCounted[letter]) {
+      lettersCounted[letter] += 1;
+    } else {
+      lettersCounted[letter] = 1;
+    }
+  }
+  return lettersCounted;
+};
+
+const test = countLetters("lighthouse in the house");
+
+assertEqual(test["l"], 1);
+assertEqual(test["h"], 4);
+assertEqual(test["o"], 2);
+assertEqual(test["s"], 2);
+
