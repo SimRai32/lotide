@@ -26,7 +26,7 @@ const findKeyByValue = function(listOfShows, showName) {
   const keys = Object.keys(listOfShows);
   for (const show of keys) {
     if (showName === listOfShows[show]) {
-      console.log(listOfShows[show]);
+      console.log(listOfShows);
       genre = show;
       break;
     }
