@@ -17,7 +17,6 @@ const eqArrays = function(arrayOne, arrayTwo) {
     for (let i = 0; i < arrayOne.toString().length; i++) {
       console.log(arrayOne.toString());
       if (arrayOne.toString()[i] !== arrayTwo.toString()[i]) {
-        console.log("here");
         check = false;
       }
     }
