@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@simrai32/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "Some useful functions for modifying and getting values from strings, objects, and arrays.",
   "main": "",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/SimRai32/lotide.git"
   },
-  "author": "",
+  "author": "Simran Kalirai",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/SimRai32/lotide/issues"
