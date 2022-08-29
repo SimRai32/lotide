@@ -1,7 +1,7 @@
 // FUNCTION IMPLEMENTATION
 const assertEqual = function(actual, expected) {
   let trueOrFalse = true;
-  if (actual === undefined || expected === undefined) {
+  if (!actual || !expected) {
     if (actual !== expected) {
       trueOrFalse = false;
     }
@@ -22,8 +22,5 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-// TEST CODE
-assertEqual("Lighthouse Labs", "Bootcamp");
-assertEqual(1, 1);
-assertEqual(11, 12);
-assertEqual(undefined, "dog");
+
+module.exports = assertEqual;
