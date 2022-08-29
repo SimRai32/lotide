@@ -17,4 +17,4 @@ const without = function(arrayOne, arrayTwo) {
     return console.log(modifiedArr);
   };
 
- 
+  module.exports = without;

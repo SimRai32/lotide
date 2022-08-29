@@ -44,3 +44,4 @@ eqArrays(results1[0], "g");
 eqArrays(results2[3], 11);
 eqArrays(results3, []);
 
+module.exports = map;

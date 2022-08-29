@@ -53,3 +53,5 @@ const assertObjectsEqual = function(actual, expected) {
   }
 };
 
+
+module.exports = assertObjectsEqual;

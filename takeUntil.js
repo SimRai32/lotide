@@ -51,3 +51,5 @@ eqArrays(results1, data1);
 eqArrays(results2[3], "Hollywood");
 
 eqArrays(results3, [1,2]);
+
+module.exports = takeUntil;

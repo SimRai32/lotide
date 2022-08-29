@@ -39,3 +39,5 @@ const test = letterPositions("lighthouse in the house");
 
 assertEqual(test["l"], [0]);
 assertEqual(test["i"], [1,11]);
+
+module.exports = letterPositions;
