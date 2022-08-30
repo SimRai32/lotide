@@ -12,9 +12,7 @@ const flatten = function(array) {
       index++;
     }
   }
-  return console.log(flatArray);
+  return (flatArray);
 };
-
-flatten([1, 2, [3, 4], 5, [6]]);
 
 module.exports = flatten;
